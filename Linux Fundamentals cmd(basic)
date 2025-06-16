@@ -1,1 +1,100 @@
 /  == root
+# Linux Command Notes
+
+## 1. ls
+Description: List files and directories in the current directory.
+
+Examples:
+ls                   # List files in the current directory
+ls -l                 # List in long format (with details)
+ls -R                 # List files and directories recursive
+ls *.txt              # List files matching *.txt
+ls [ab].txt          # List files matching a.txt or b.txt
+ls [!ab]*            # List files NOT starting with a or b
+
+
+## 2. cd
+Description: Change directory.
+
+Examples:
+cd directory_name    # Change to directory_name
+cd ..                 # Change to parent directory
+cd /absolute/path    # Change to an absolute path
+cd                   # Change to home directory
+
+
+## 3. pwd
+Description: Prints the current directory.
+
+Example:
+pwd                   # Prints working directory
+
+
+## 4. touch
+Description: Create a new, empty file.
+
+Examples:
+touch a.txt
+touch b.txt
+touch new{1..4}.txt   # Create new1.txt, new2.txt, new3.txt, new4.txt
+
+
+## 5. mkdir
+Description: Create a directory.
+
+Examples:
+mkdir test
+mkdir -p course/che/projectOfChe
+
+
+## 6. rmdir
+Description: Remove a directory (directory must be empty).
+
+Examples:
+rmdir testdel
+rmdir LPU
+
+
+## 7. rm
+Description: Remove files or directories.
+
+Examples:
+rm a.txt               # Remove a file
+rm *.txt               # Remove multiple files matching pattern
+rm -r directory_name   # Remove directory and its content
+
+
+## 8. cp
+Description: Copy files or directories.
+
+Examples:
+cp a.txt b.txt                   # Copy a.txt to b.txt
+cp lpu*.txt Documents/          # Copy files matching pattern to directory
+cp -r alpha/ Documents/        # Recursively copy directory
+
+
+## 9. mv
+Description: Move or rename files or directories.
+
+Examples:
+mv new3.txt new3(updated).txt   # Renaming a file
+mv lpu*.txt Music/              # Move files matching pattern into directory
+
+
+## 10. history
+Description: Prints previously used commands.
+
+Example:
+history                   # Prints command history
+
+
+## Additional Notes:
+
+- * : match ANY number of ANY character
+- ? : match ANY single character
+- [abc] : match ANY character within brackets
+- [!abc] : match ANY character except those listed
+- {1..10} : expansion of range (creates multiple files or directories)
+
+
+-------------------------------------------------------------------------------------------
